@@ -1,0 +1,26 @@
+.home-title {
+  font-size: 28px;
+  font-weight: 600;
+  color: #1f2937;
+  margin-top: 32px;
+}
+
+.home-subtitle {
+  max-width: 700px;
+  margin-top: 12px;
+  color: #6b7280;
+  line-height: 1.6;
+}
+
+.home-section {
+  margin-top: 40px;
+}
+
+.home-section h2 {
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+
+.muted {
+  color: #6b7280;
+}
