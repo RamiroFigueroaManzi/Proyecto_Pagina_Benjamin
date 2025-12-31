@@ -1,0 +1,43 @@
+.model-card {
+  border: 1px solid #000000;
+  border-radius: 12px;
+  overflow: hidden;
+  cursor: pointer;
+  background: #ffffff;
+
+  display: flex;
+  flex-direction: column;
+
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.model-card:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.12);
+}
+
+/* IMAGEN MÁS BAJA (card más chica) */
+.model-card-image {
+  width: 100%;
+  aspect-ratio: 4 / 3;   /* 👈 clave para achicar */
+  object-fit: cover;
+}
+
+/* CONTENIDO COMPACTO */
+.model-card-content {
+  padding: 12px;
+}
+
+.model-card-content h3 {
+  margin: 0 0 6px 0;
+  font-size: 15px;
+  font-weight: 600;
+  color: #000000;
+}
+
+.model-card-content p {
+  margin: 0;
+  font-size: 13px;
+  line-height: 1.4;
+  color: #444444;
+}

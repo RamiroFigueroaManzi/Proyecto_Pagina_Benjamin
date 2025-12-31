@@ -1,6 +1,9 @@
 import { createBrowserRouter } from 'react-router-dom';
+
 import MainLayout from '../components/layout/MainLayout';
 import Home from '../pages/Home';
+import Catalog from '../pages/Catalog';
+import ModelDetail from '../pages/ModelDetail';
 
 export const router = createBrowserRouter([
   {
@@ -13,7 +16,11 @@ export const router = createBrowserRouter([
       },
       {
         path: 'catalog',
-        element: <h1>Catálogo (próximo paso)</h1>,
+        element: <Catalog />,
+      },
+      {
+        path: 'catalog/:id',
+        element: <ModelDetail />,
       },
     ],
   },
